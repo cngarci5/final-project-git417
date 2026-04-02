@@ -16,7 +16,31 @@ img {
 
 :root {
 
-    /* add colors
-    /* fonts
+    /* add colors */
+    --inky-green: #5faa60;
+    --dark-green: #279250;
+    --bright-green: #95c84b;
+    --muted-green: #4b8570;
+    --light-green: #92be9e;
+    --dark-blue: #3f6f81;
+    --muted-blue: #7599a4;
+    --light-blue: #e0ecea;
+    --medium-blue: #668d90;
+    --light-gray: #d3d3d2;
+    --dark-grey: #2f3332;
+    --storm-coast-gray: #636361;
+    --off-White: #ededeb;
+    --black: #131414;
 
+    /* fonts */
+    --font-heading: articulat-heavy-cf, sans-serif;
+    --font-extra: articulat-cf, sans-serif;
+    --font-body: articulat-cf, sans-serif;
+
+}
+
+/* light and dark mode */
+
+body {
+    background-color: #d3d3d2;
 }

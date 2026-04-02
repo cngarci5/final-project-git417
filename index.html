@@ -10,36 +10,90 @@
 </head>
 
 <body>
-<header>
-
-
-
+<header id="heading">
+<img src="images/logo.jpg" width="300" height="300" alt="Dragon Age Inquisition game logo.">
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
+<section id="about">
+
+<h2>Watch the official DA:I trailer!</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jJqxfkgSUog?si=9GiHjQYaUiQiuyHz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h3>Will you be the next hero to step up to the task?</h3>
+<p>description</p>
+</section>
+
+<section id="shop">
+<h2>Jump back into the world of Thedas</h2>
+<p>Available On</p>  
+<!-- add logos -->
+<label for="platforms">Choose your platform</label>
+<select name="platforms" id="platforms">
+<option value="ea">EA app for Windows</option>
+<option value="xbox">Xbox Store</option>
+<option value="playstation">Playstation Store</option>
+<option value="steam">Steam Store</option>
+<option value="epic">Epic Games Store</option>
+</select>
 
 
+</section>
 
+<section id="game">
+<h2>Play & Discover</h2>
+<h3>Play to Win!</h3>
+<p>Guess the number correctly and win an Inquisition pin!</p>
+<!-- image and game -->
+<h4>Roll for Romance</h4>
+<p>Can't decide who to romance? Roll and we'll give you a randomized choice!</p>
+<!-- image and game -->
+</section>
 
+<section id="contact">
+<h2>Contact Us</h2>
 
+<form>
+<label for="full-name">Full Name*</label>
+<input type="text" name="full-name" id="full-name" required>
 
+<label for="phone">Phone Number*</label>
+<input type="tel" name="phone" id="phone" required>
 
+<label for="email">Email*</label>
+<input type="email" name="email" id="email" required>
 
+<fieldset>
+<legend>
+    Preferred Contact Method*
+</legend>
 
+<input type="radio" name="preferred-contact" id="preferred-phone" required>
+<label for="preferred-phone">Phone</label>
 
+<input type="radio" name="preferred-contact" id="preferred-email" required>
+<label for="preferred-email">Email</label>
+</fieldset>
 
+<label for="">Comments*</label>
+<textarea name="comments" id="comments" required></textarea>
 
-
-
-
-
+<input type="submit" name="submit" id="submit">
+</form>
+</section>
 
 </main>
 <footer>
-
-
-
-
+<h2>Find Us On Social Media</h2>
+<!-- sm logos -->
+<p>This site is for educational purposes only</p>
 </footer>
 </body>
 </html>
