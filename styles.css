@@ -39,8 +39,86 @@ img {
 
 }
 
-/* light and dark mode */
-
+/* add light and dark mode!!! */
 body {
-    background-color: #d3d3d2;
+    background-color: var(--off-White);
+    color: var(--dark-grey);
+    font-family: var(--font-body);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+body.dark-mode {
+    background-color: var(--storm-coast-gray);
+    color: var(--off-White);
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 4rem;
+background-color: var(--light-gray);            /* fix colors */
+border-bottom: 2px solid var(--bright-green);
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--bright-green);
+    transition: color 0.5s;
+}
+
+body.dark-mode header {
+    background-color: var(--black);          /* fix colors */
+    color: var(--off-White);
+    border-bottom: 2px solid var(--bright-green);
+}
+
+body.dark-mode nav a {
+    color: var(--off-White);
+}
+
+body.dark-mode nav a:hover {
+    color: var(--bright-green);
+}
+
+#l-d-toggle {
+    font-size: 1rem;
+    background-color: var(--off-White);
+    color: var(--bright-green);                         /* fix colors */
+    border: 1px solid var(--bright-green);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+body.dark-mode #l-d-toggle {
+    background-color: var(--storm-coast-gray);
+    color: var(--bright-green);
 }
