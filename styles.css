@@ -58,7 +58,7 @@ header {
 display: flex;
 align-items: center;
 justify-content: flex-start;
-gap: 4rem;
+gap: 2rem;
 background-color: var(--light-gray);            /* fix colors */
 border-bottom: 2px solid var(--bright-green);
 }
@@ -122,3 +122,27 @@ body.dark-mode #l-d-toggle {
     background-color: var(--storm-coast-gray);
     color: var(--bright-green);
 }
+
+#about {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("images/dai-background-poster.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+    border-bottom: 2px solid var(--bright-green);
+}
+
+#about iframe {
+    border: 2px solid var(--bright-green);
+}
+
