@@ -146,3 +146,23 @@ body.dark-mode #l-d-toggle {
     border: 2px solid var(--bright-green);
 }
 
+#shop {
+    text-align: center;
+}
+
+#shop h2 {
+    margin-bottom: 0.3rem;
+}
+
+#shop p {
+    font-weight: bolder;
+    margin-bottom: 0.3rem;
+}
+
+.platform-option-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
