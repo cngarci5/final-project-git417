@@ -166,3 +166,80 @@ body.dark-mode #l-d-toggle {
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
+/* add product display */
+
+/* add game */
+
+#contact h2 {
+text-align: center;     /* center */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+#contact fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#contact fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+#contact label {
+    font-weight: bolder;
+    margin-bottom: 0.2rem;
+}
+
+#contact legend {
+    font-family: var(--font-body);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#contact input, #contact textarea, #contact select {
+    padding: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 2px;
+    font-family: var(--font-body);
+    font-size: larger;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+#contact input[type="submit"] {
+    background-color: var(--bright-green);
+    color: var(--off-White);
+    font-weight: bold;
+    font-size: larger;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
