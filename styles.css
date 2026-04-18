@@ -168,6 +168,43 @@ body.dark-mode #l-d-toggle {
 }
 
 /* add product display */
+#product-display {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#product-display img:first-of-type {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.platform-logo-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.selector {
+    background: none;
+    border: transparent;
+    color: var(--dark-grey);
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.selector:hover {
+    color: var(--bright-green);
+    transition: color 0.5s;
+}
+
+.platform-logo-display {
+    margin-top: 1.5rem;
+}
+
+
+
 
 /* add game */
 

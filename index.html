@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Caitlin Garcia">
 <link rel="stylesheet" href="https://use.typekit.net/xqw6srh.css">
 <link rel="stylesheet" href="styles.css">
@@ -30,7 +30,6 @@
 <h2>Watch the official DA:I trailer!</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/jJqxfkgSUog?si=9GiHjQYaUiQiuyHz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <h3>Will you be the next hero to step up to the task?</h3>
-<p>description</p>
 </section>
 
 <section id="shop">
@@ -49,6 +48,16 @@
 <section id="product-display">
 <img src="images/dai-poster.jpeg" alt="Poster of Dragon Age Inquisition: Game of the year edition" width="400" height="600">
 <h2>Choose your platform</h2>
+<div class="platform-logo-selector">
+    <button class="selector active" data-platform="ea">EA</button>
+    <button class="selector" data-platform="playstation">Playstation</button>
+    <button class="selector" data-platform="xbox">Xbox</button>
+    <button class="selector" data-platform="steam">Steam</button>
+</div>
+
+<div class="platform-logo-display">
+    <img id="platform-logo" src="images/ea-svgrepo-com.svg" alt="EA logo" width="30" height="30">
+</div>
 </section>
 
 <section id="game">
