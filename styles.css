@@ -184,6 +184,10 @@ body.dark-mode #l-d-toggle {
     gap: 1rem;
 }
 
+body.dark-mode .selector {
+    color: var(--off-White);
+}
+
 .selector {
     background: none;
     border: transparent;
