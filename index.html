@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<title>Final Project</title>
+<title>Dragon Age Inquisition</title>
 </head>
 
 <body>
@@ -57,17 +57,32 @@
 
 <div class="platform-logo-display">
     <img id="platform-logo" src="images/ea-svgrepo-com.svg" alt="EA logo" width="30" height="30">
+
+    <p id="platform-price"></p>
+    <p id="platform-description"></p>
 </div>
+
+<button class="fake-button">Take Me There</button>
 </section>
 
 <section id="game">
 <h2>Play & Discover</h2>
 <h3>Play to Win!</h3>
 <p>Guess the number correctly and win an Inquisition pin!</p>
-<!-- image and game -->
+<div class="game-random" id="guess-random">
+<form id="guess-form">
+    <input type="number" id="guess-input" min="1" max="10" required>
+    <input type="submit" value="Submit">
+</form>
+<p id="guess-result"></p>
+</div>
+
 <h4>Roll for Romance</h4>
 <p>Can't decide who to romance? Roll and we'll give you a randomized choice!</p>
-<!-- image and game -->
+<div class="game-random" id="romance-random">
+    <button id="romance-roll">Roll</button>
+    <p id="romance-result"></p>
+</div>
 </section>
 
 <section id="contact">

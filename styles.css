@@ -190,12 +190,24 @@ body.dark-mode .selector {
 
 .selector {
     background: none;
-    border: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
     color: var(--dark-grey);
     font-weight: bolder;
     font-size: larger;
     cursor: pointer;
     margin-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.selector.active {
+    border-bottom: 3px solid var(--bright-green);
+    color: var(--bright-green);
+}
+
+body.dark-mode .selector.active {
+    border-bottom: 3px solid var(--bright-green);
+    color: var(--bright-green);
 }
 
 .selector:hover {
@@ -205,13 +217,123 @@ body.dark-mode .selector {
 
 .platform-logo-display {
     margin-top: 1.5rem;
+    text-align: center;
+}
+
+#platform-price {
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--dark-grey);
+    margin-top: 1rem;
+}
+
+#platform-description {
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 400px;
+    color: var(--dark-grey);
+    width: 100%;
+    text-align: center;
+}
+
+body.dark-mode #platform-price {
+    color: var(--off-White);
+}
+
+body.dark-mode #platform-description {
+    color: var(--off-White);
+}
+
+.fake-button {
+    background-color: var(--bright-green);
+    color: var(--off-White);
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.fake-button:hover {
+    background-color: var(--dark-green);
 }
 
 
 
-
 /* add game */
+#game {
+    text-align: center;
+}
 
+.game-random {
+    background-color: var(--off-White);
+    border-radius: 4px;
+    margin: 1rem auto 1rem auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+#guess-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+body.dark-mode .game-random {
+    background-color: var(--storm-coast-gray);
+    color: var(--off-White);
+}
+
+.game-random input[type="number"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 80%;
+    font-size: large;
+}
+
+body.dark-mode .game-random input[type="number"] {
+    background-color: var(--off-White);
+    color: var(--dark-grey);
+}
+
+.game-random input[type="submit"], .game-random button {
+    background-color: var(--bright-green);
+    color: var(--off-White);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.game-random input[type="submit"]:hover, .game-random button:hover {
+    background-color: var(--dark-green);
+}
+
+#guess-result, #romance-result {
+    color: var(--dark-grey);
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+body.dark-mode #guess-result, body.dark-mode #romance-result {
+    color: var(--off-White);
+}
+
+/* contact */
 #contact h2 {
 text-align: center;     /* center */
 }
@@ -235,6 +357,7 @@ text-align: center;     /* center */
     align-items: center;
     gap: 0.4rem;
 }
+
 #contact label {
     font-weight: bolder;
     margin-bottom: 0.2rem;
@@ -269,6 +392,10 @@ text-align: center;     /* center */
     max-width: 400px;
     align-self: center;
     cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: var(--dark-green);
 }
 
 footer {
